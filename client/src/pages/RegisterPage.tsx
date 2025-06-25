@@ -246,13 +246,21 @@ const RegisterPage: React.FC = () => {
           <div className="mt-6">
             <p className="text-xs text-center text-gray-500">
               Bằng cách đăng ký, bạn đồng ý với{' '}
-              <a href="#" className="text-pink-500 underline hover:text-pink-600">
+              <button 
+                type="button"
+                className="text-pink-500 underline hover:text-pink-600 bg-transparent border-none p-0 cursor-pointer"
+                onClick={() => window.open('/terms', '_blank')}
+              >
                 Điều khoản sử dụng
-              </a>{' '}
+              </button>{' '}
               và{' '}
-              <a href="#" className="text-pink-500 underline hover:text-pink-600">
+              <button 
+                type="button"
+                className="text-pink-500 underline hover:text-pink-600 bg-transparent border-none p-0 cursor-pointer"
+                onClick={() => window.open('/privacy', '_blank')}
+              >
                 Chính sách bảo mật
-              </a>{' '}
+              </button>{' '}
               của chúng tôi.
             </p>
           </div>
