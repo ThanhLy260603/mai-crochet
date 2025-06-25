@@ -9,7 +9,10 @@ import {
   ProductFormData 
 } from '../types';
 
-const API_BASE_URL = '/api';
+// Force production API URL
+const API_BASE_URL = window.location.hostname === 'localhost' 
+  ? 'http://localhost:5000/api' 
+  : '/api';
 
 // Tạo axios instance
 const api = axios.create({
