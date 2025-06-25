@@ -9,7 +9,7 @@ import {
   ProductFormData 
 } from '../types';
 
-const API_BASE_URL = process.env.REACT_APP_API_URL || '/api';
+const API_BASE_URL = '/api';
 
 // Tạo axios instance
 const api = axios.create({
