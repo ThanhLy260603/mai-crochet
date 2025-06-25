@@ -1,5 +1,6 @@
 {
   "version": 2,
+  "name": "mai-crochet",
   "builds": [
     {
       "src": "client/package.json",
@@ -9,7 +10,7 @@
       }
     },
     {
-      "src": "server/server.js",
+      "src": "server/**/*.js",
       "use": "@vercel/node"
     }
   ],
