@@ -1,7 +1,7 @@
 {
-  "name": "webbanlen",
-  "version": "1.0.0",
-  "description": "Website bán hàng sản phẩm len",
+  "name": "mai-crochet",
+  "version": "1.0.1",
+  "description": "Mai Crochet - Sản phẩm len crochet handmade",
   "main": "server/server.js",
   "scripts": {
     "dev": "concurrently \"npm run server\" \"npm run client\"",
