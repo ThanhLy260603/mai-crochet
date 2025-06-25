@@ -20,18 +20,20 @@
       "dest": "/server/server.js"
     },
     {
-      "src": "/(.*)",
-      "dest": "/client/build/$1"
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/api/(.*)",
-      "destination": "/server/server.js"
+      "src": "/static/(.*)",
+      "dest": "/client/build/static/$1"
     },
     {
-      "source": "/(.*)",
-      "destination": "/client/build/index.html"
+      "src": "/manifest.json",
+      "dest": "/client/build/manifest.json"
+    },
+    {
+      "src": "/favicon.ico",
+      "dest": "/client/build/favicon.ico"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/client/build/index.html"
     }
   ]
 } 
